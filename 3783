@@ -42,10 +42,8 @@ Constraints:
 1 <= n <= 109
 
 Solution:
-Digit manipulation through modulo and division to reverse integers and calculate absolute difference
-
-Approach
-let long long rev=0
-Proceed rev=10*rev+x%10 for(int x=n; x; x/=10)
-subtract rev-=n & return its absolute value
+Манипулируем цифрами с помощью деления по модулю и обратного деления целых чисел и вычисляем абсолютную разность.
+long long rev=0
+продолжить rev=10*rev+x%10 for(int x=n; x; x/=10)
+вычесть rev-=n вернуть его абсолютное значение
 */

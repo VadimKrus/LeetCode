@@ -1,7 +1,8 @@
 class Solution {
 public:
     int maxDistinct(string s) {
-        return set<char>(s.begin(), s.end()).size();
+        set<char> set(s.begin(),s.end());
+        return set.size();
     }
 };
 
@@ -40,7 +41,7 @@ Constraints:
 s consists of lowercase English letters.
 
 Solution
-We can only start one substring for each unique character. So the maximum possible substrings is just the number of distinct characters in the string.
-We use Set to find how many unique letters are there.
-That count is the answer, because we can always split the string so that each unique character starts exactly one substring.
+Для каждого уникального символа можно начать только одну подстроку. Таким образом, максимальное количество подстрок равно количеству различных символов в строке.
+Используем команду Set, чтобы узнать, сколько уникальных букв существует.
+Это число и есть ответ, потому что мы всегда можем разделить строку так, чтобы каждый уникальный символ начинался ровно с одной подстроки.
 */

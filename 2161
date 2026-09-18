@@ -42,10 +42,10 @@ Constraints:
 pivot equals to an element of nums.
 
 Solution:
-We need to rearrange the array such that all elements smaller than the pivot come first, followed by elements equal to the pivot, and then elements greater than the pivot. The relative order of elements within each group should remain unchanged.
-Traverse the array three times:
-Add all elements smaller than the pivot to the result array.
-Add all elements equal to the pivot.
-Add all elements greater than the pivot.
-Since elements are added in their original order during each traversal, the relative ordering is preserved.
+Перегруппируем массив таким образом, чтобы сначала располагались элементы меньше опорного значения, затем элементы, равные опорному значению, а затем элементы больше опорного значения. Относительный порядок элементов внутри каждой группы должен оставаться неизменным.
+Пройдем по массиву три раза:
+Добавим в результирующий массив все элементы, меньшие, чем опорный элемент.
+Сложим все элементы, равные опорному значению.
+Добавим все элементы, превышающие опорную точку.
+Поскольку элементы добавляются в исходном порядке при каждом обходе, относительный порядок сохраняется.
 */

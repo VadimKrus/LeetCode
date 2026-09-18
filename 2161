@@ -10,12 +10,8 @@ public:
 };
 
 /*Partition Array According to Given Pivot
-Solved
 Medium
-Topics
-premium lock icon
-Companies
-Hint
+
 You are given a 0-indexed integer array nums and an integer pivot. Rearrange nums such that the following conditions are satisfied:
 
 Every element less than pivot appears before every element greater than pivot.
@@ -45,19 +41,11 @@ Constraints:
 -106 <= nums[i] <= 106
 pivot equals to an element of nums.
 
-Intuition
+Solution:
 We need to rearrange the array such that all elements smaller than the pivot come first, followed by elements equal to the pivot, and then elements greater than the pivot. The relative order of elements within each group should remain unchanged.
-
-Approach:
 Traverse the array three times:
 Add all elements smaller than the pivot to the result array.
 Add all elements equal to the pivot.
 Add all elements greater than the pivot.
 Since elements are added in their original order during each traversal, the relative ordering is preserved.
-
-Complexity
-Time complexity:
-O(n)
-Space complexity:
-O(n)
 */
